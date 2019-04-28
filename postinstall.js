@@ -14,4 +14,4 @@ async function copyDir(src, dest) {
   }
 }
 
-copyDir('templates/', '../../../../templates/');
+copyDir('_templates/', process.env.INIT_CWD + '/_templates/');
