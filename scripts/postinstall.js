@@ -14,4 +14,4 @@ async function copyDir(src, dest) {
   }
 }
 
-copyDir('../templates', '../../../../templates');
+copyDir('templates/', '../../../../templates/');
