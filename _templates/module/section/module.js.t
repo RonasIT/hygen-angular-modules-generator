@@ -1,5 +1,6 @@
 ---
 to: src/app/<%= h.changeCase.paramCase(name) %>/<%= h.changeCase.paramCase(name) %>.module.ts
+unless_exists: true
 ---
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
