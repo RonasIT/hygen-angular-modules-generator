@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
   templateUrl: '<%= h.changeCase.paramCase(name) %>.html',
   styleUrls: ['<%= h.changeCase.paramCase(name) %>.scss']
 })
-export class <%= h.inflection.camelize(name) %>Component {
+export class <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Component {
 
 }
