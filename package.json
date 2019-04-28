@@ -1,7 +1,12 @@
 {
-  "name": "hygen-angular-modules-generator",
+  "name": "@ronas-it/hygen-angular-modules-generator",
   "version": "1.0.0",
-  "description": "A hygen package for generating angular modules",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RonasIT/hygen-angular-modules-generator.git"
+  },
   "keywords": [
     "hygen",
     "generator",
@@ -9,7 +14,10 @@
     "angular",
     "modules"
   ],
-  "main": "index.js",
-  "repository": "https://github.com/RonasIT/hygen-angular-modules-generator",
-  "license": "MIT"
+  "author": "Ronas IT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RonasIT/hygen-angular-modules-generator/issues"
+  },
+  "homepage": "https://github.com/RonasIT/hygen-angular-modules-generator#readme"
 }
