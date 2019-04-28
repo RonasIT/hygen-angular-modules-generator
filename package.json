@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/RonasIT/hygen-angular-modules-generator/issues"
   },
-  "homepage": "https://github.com/RonasIT/hygen-angular-modules-generator#readme"
+  "homepage": "https://github.com/RonasIT/hygen-angular-modules-generator#readme",
+  "dependencies": {
+    "ncp": "^2.0.0"
+  }
 }
