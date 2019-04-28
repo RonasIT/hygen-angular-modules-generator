@@ -1,0 +1,1 @@
+# hygen-angular-modules-generator
