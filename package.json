@@ -8,7 +8,7 @@
     "url": "git+https://github.com/RonasIT/hygen-angular-modules-generator.git"
   },
   "scripts": {
-    "postinstall": "scripts/install.js"
+    "postinstall": "scripts/postinstall.js"
   },
   "keywords": [
     "hygen",
