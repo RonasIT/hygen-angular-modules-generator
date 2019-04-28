@@ -1,4 +1,5 @@
 const FSP = require('fs').promises;
+const Path = require('path');
 
 async function copyDir(src, dest) {
   const entries = await FSP.readdir(src, { withFileTypes: true });
@@ -13,5 +14,7 @@ async function copyDir(src, dest) {
     }
   }
 }
+
+console.log(process.env.INIT_CWD);
 
 copyDir('_templates/', process.env.INIT_CWD + '/_templates/');
