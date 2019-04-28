@@ -4,6 +4,5 @@ Generator Angular Modules.
 
 ## Installation
 
-1. Add `_templates/` to `.gitignore`
-1. Install `hygen-add` by executing command `npm install -g hygen-add`
-1. Execute command `hygen-add https://github.com/RonasIT/hygen-angular-modules-generator`
+1. Install `hygen` by executing command `npm install -g hygen`.
+1. Execute command `npm install @ronas-it/hygen-angular-modules-generator` in project folder.
