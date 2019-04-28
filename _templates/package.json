@@ -1,0 +1,15 @@
+{
+  "name": "hygen-angular-modules-generator",
+  "version": "1.0.0",
+  "description": "A hygen package for generating angular modules",
+  "keywords": [
+    "hygen",
+    "generator",
+    "boilerplate",
+    "angular",
+    "modules"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/RonasIT/hygen-angular-modules-generator",
+  "license": "MIT"
+}
