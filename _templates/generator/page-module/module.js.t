@@ -7,7 +7,7 @@ import { NgModule } from '@angular/core';
 import { <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %><%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageComponent } from './<%= h.changeCase.paramCase(name) %>.component';
 import { <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %><%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageRoutingModule } from './<%= h.changeCase.paramCase(name) %>.routing';
 import { RouterModule } from '@angular/router';
-<% if (withService) { %>import { <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %>Shared<%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Module } from '../shared/<%= h.changeCase.paramCase(name) %>/<%= h.changeCase.paramCase(name) %>.module';<% } %>
+<% if (locals.withService) { %>import { <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %>Shared<%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Module } from '../shared/<%= h.changeCase.paramCase(name) %>/<%= h.changeCase.paramCase(name) %>.module';<% } %>
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     RouterModule,
-    <% if (withService) { %><%= h.changeCase.ucFirst(h.changeCase.camel(section)) %>Shared<%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Module,<% } %>
+    <% if (locals.withService) { %><%= h.changeCase.ucFirst(h.changeCase.camel(section)) %>Shared<%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Module,<% } %>
     <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %><%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageRoutingModule
   ]
 })
