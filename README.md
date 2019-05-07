@@ -39,6 +39,12 @@ hygen generator page-child-component --section name-of-section --page name-of-pa
 hygen generator child-page-module --section name-of-section --parentPage name-of-page --name name-of-child-page
 ```
 
+### Generate child component for child page
+
+```bash
+hygen generator child-page-component --section name-of-section --parentPage name-of-parent-page --page name-of-child-page --name name-of-component
+```
+
 ### Generate shared module
 
 #### Generate shared module (component)
