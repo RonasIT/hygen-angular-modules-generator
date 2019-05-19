@@ -12,6 +12,9 @@ import { NgModule } from '@angular/core';
     <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %>Shared<%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Directive
   ]<% } %><% if (locals.component) { %>declarations: [
     <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %>Shared<%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Component
+  ],
+  exports: [
+    <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %>Shared<%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Component
   ]<% } %><% if (locals.service) { %>providers: [
     <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Service
   ]<% } %>
