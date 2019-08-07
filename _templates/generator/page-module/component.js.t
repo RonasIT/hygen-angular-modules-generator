@@ -2,8 +2,8 @@
 to: src/app/<%= h.changeCase.paramCase(section) %>/<%= h.changeCase.paramCase(name) %>/<%= h.changeCase.paramCase(name) %>.component.ts
 unless_exists: true
 ---
-import { Component } from '@angular/core';
-<% if (locals.withService) { %>import { <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Service } from '../shared/<%= h.changeCase.paramCase(name) %>/<%= h.changeCase.paramCase(name) %>.service';<% } %>
+import { Component } from '@angular/core';<% if (locals.withService) { %>
+import { <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Service } from './shared/services/<%= h.changeCase.paramCase(name) %>';<% } %>
 
 @Component({
   selector: '<%= h.changeCase.paramCase(section) %>-<%= h.changeCase.paramCase(name) %>-page',

@@ -1,5 +1,5 @@
 ---
-to: "<%= locals.withService ? 'src/app/' + h.changeCase.paramCase(section) + '/shared/' + h.changeCase.paramCase(name) + '/' + h.changeCase.paramCase(name) + '.service.ts' : null %>"
+to: "<%= locals.withService ? 'src/app/' + h.changeCase.paramCase(section) + '/' + h.changeCase.paramCase(name) + '/shared/services/' + h.changeCase.paramCase(name) + '.ts' : null %>"
 ---
 import { Injectable } from '@angular/core';
 

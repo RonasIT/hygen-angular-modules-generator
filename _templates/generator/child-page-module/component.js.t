@@ -3,7 +3,7 @@ to: src/app/<%= h.changeCase.paramCase(section) %>/<%= h.changeCase.paramCase(pa
 unless_exists: true
 ---
 import { Component } from '@angular/core';<% if (locals.withService) { %>
-import { <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Service } from '../../shared/<%= h.changeCase.paramCase(name) %>/<%= h.changeCase.paramCase(name) %>.service';<% } %>
+import { <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Service } from './shared/services/<%= h.changeCase.paramCase(name) %>.service';<% } %>
 
 @Component({
   selector: '<%= h.changeCase.paramCase(section) %>-<%= h.changeCase.paramCase(parentPage) %>-<%= h.changeCase.paramCase(name) %>-page',
