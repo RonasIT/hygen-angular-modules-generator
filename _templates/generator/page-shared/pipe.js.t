@@ -7,7 +7,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
   name: '<%= h.changeCase.camel(name) %>'
 })
-export class <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %>Shared<%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Pipe implements PipeTransform {
+export class <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %><%= h.changeCase.ucFirst(h.changeCase.camel(page)) %><%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Pipe implements PipeTransform {
   public transform(value: string): string {
     return value;
   }

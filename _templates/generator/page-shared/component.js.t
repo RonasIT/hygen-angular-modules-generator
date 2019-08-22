@@ -9,4 +9,4 @@ import { Component } from '@angular/core';
   templateUrl: '<%= h.changeCase.paramCase(name) %>.html',
   styleUrls: ['<%= h.changeCase.paramCase(name) %>.scss']
 })
-export class <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %>Shared<%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Component { }
+export class <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %><%= h.changeCase.ucFirst(h.changeCase.camel(page)) %><%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Component { }
