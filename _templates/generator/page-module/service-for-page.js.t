@@ -4,6 +4,6 @@ to: "<%= locals.withService ? 'src/app/' + h.changeCase.paramCase(section) + '/'
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Service {
+export class <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageService {
 
 }
