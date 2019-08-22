@@ -17,9 +17,9 @@ import { <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageService } from
     CommonModule,
     RouterModule,
     <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %><%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageRoutingModule
-  ]<% if (locals.withService) { %>,
-  providers: [
-    <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageService
-  ]<% } %>
+  ],
+  providers: [<% if (locals.withService) { %>
+    <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageService<% } %>
+  ]
 })
 export class <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %><%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageModule { }
