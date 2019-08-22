@@ -5,7 +5,7 @@ unless_exists: true
 import { Component } from '@angular/core';
 
 @Component({
-  selector: '<%= h.changeCase.paramCase(section) %>-<%= h.changeCase.paramCase(name) %>',
+  selector: '<%= h.changeCase.paramCase(page) %>-<%= h.changeCase.paramCase(name) %>',
   templateUrl: '<%= h.changeCase.paramCase(name) %>.html',
   styleUrls: ['<%= h.changeCase.paramCase(name) %>.scss']
 })
