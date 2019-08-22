@@ -10,8 +10,8 @@ import { <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageService } from
   templateUrl: '<%= h.changeCase.paramCase(name) %>.html',
   styleUrls: ['<%= h.changeCase.paramCase(name) %>.scss']
 })
-export class <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %><%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageComponent {
-  <% if (locals.withService) { %>constructor(
+export class <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %><%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageComponent {<% if (locals.withService) { %>
+  constructor(
     private <%= h.changeCase.camel(name) %>PageService: <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageService
   ) { }<% } %>
 }
