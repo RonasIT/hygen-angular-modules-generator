@@ -33,6 +33,30 @@ hygen generator page-module --section name-of-section --name name-of-page --with
 hygen generator page-child-component --section name-of-section --page name-of-page --name name-of-component
 ```
 
+#### Generate shared component for page
+
+```bash
+hygen generator page-shared --section name-of-section --page name-of-page --name name-of-component --component
+```
+
+#### Generate shared directive for page
+
+```bash
+hygen generator page-shared --section name-of-section --page name-of-page --name name-of-directive --directive
+```
+
+#### Generate shared pipe for page
+
+```bash
+hygen generator page-shared --section name-of-section --page name-of-page --name name-of-pipe --pipe
+```
+
+#### Generate shared service for page
+
+```bash
+hygen generator page-shared --section name-of-section --page name-of-page --name name-of-service --service
+```
+
 ### Generate child page module for another page
 
 ```bash
