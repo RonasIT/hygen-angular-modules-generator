@@ -78,19 +78,19 @@ hygen generator child-page-shared --section name-of-section --page name-of-page 
 #### Generate directive for child page
 
 ```bash
-hygen generator child-page-shared --section name-of-section --page name-of-page --name name-of-directive --directive
+hygen generator child-page-shared --section name-of-section --parentPage parent-page-name --page name-of-page --name name-of-directive --directive
 ```
 
 #### Generate pipe for child page
 
 ```bash
-hygen generator child-page-shared --section name-of-section --page name-of-page --name name-of-pipe --pipe
+hygen generator child-page-shared --section name-of-section --parentPage parent-page-name --page name-of-page --name name-of-pipe --pipe
 ```
 
 #### Generate service for child page
 
 ```bash
-hygen generator child-page-shared --section name-of-section --page name-of-page --name name-of-service --service
+hygen generator child-page-shared --section name-of-section --parentPage parent-page-name --page name-of-page --name name-of-service --service
 ```
 
 ### Generate shared module
