@@ -3,7 +3,7 @@ to: src/app/<%= h.changeCase.paramCase(section) %>/<%= h.changeCase.paramCase(pa
 unless_exists: true
 ---
 import { Component } from '@angular/core';<% if (locals.withService) { %>
-import { <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Service } from './shared/services';<% } %>
+import { <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageService } from './shared/services';<% } %>
 
 @Component({
   selector: '<%= h.changeCase.paramCase(section) %>-<%= h.changeCase.paramCase(parentPage) %>-<%= h.changeCase.paramCase(name) %>-page',
@@ -12,6 +12,6 @@ import { <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Service } from './
 })
 export class <%= h.changeCase.ucFirst(h.changeCase.camel(section)) %><%= h.changeCase.ucFirst(h.changeCase.camel(parentPage)) %><%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageComponent {
   <% if (locals.withService) { %>constructor(
-    private <%= h.changeCase.camel(name) %>Service: <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>Service
+    private <%= h.changeCase.camel(name) %>Service: <%= h.changeCase.ucFirst(h.changeCase.camel(name)) %>PageService
   ) { }<% } %>
 }
