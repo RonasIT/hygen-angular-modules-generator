@@ -27,7 +27,7 @@ hygen generator page-module --section name-of-section --name name-of-page
 hygen generator page-module --section name-of-section --name name-of-page --withService
 ```
 
-#### Generate child component for page
+#### Generate child component for page (deprecated)
 
 ```bash
 hygen generator page-child-component --section name-of-section --page name-of-page --name name-of-component
@@ -57,7 +57,7 @@ hygen generator page-shared --section name-of-section --page name-of-page --name
 hygen generator page-shared --section name-of-section --page name-of-page --name name-of-service --service
 ```
 
-### Generate child page module for another page
+### Generate child page module for another page (deprecated)
 
 ```bash
 hygen generator child-page-module --section name-of-section --parentPage name-of-page --name name-of-child-page
