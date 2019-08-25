@@ -27,31 +27,31 @@ hygen generator page-module --section name-of-section --name name-of-page
 hygen generator page-module --section name-of-section --name name-of-page --withService
 ```
 
-### Generate child component for page
+#### Generate child component for page
 
 ```bash
 hygen generator page-child-component --section name-of-section --page name-of-page --name name-of-component
 ```
 
-#### Generate shared component for page
+#### Generate component for page
 
 ```bash
 hygen generator page-shared --section name-of-section --page name-of-page --name name-of-component --component
 ```
 
-#### Generate shared directive for page
+#### Generate directive for page
 
 ```bash
 hygen generator page-shared --section name-of-section --page name-of-page --name name-of-directive --directive
 ```
 
-#### Generate shared pipe for page
+#### Generate pipe for page
 
 ```bash
 hygen generator page-shared --section name-of-section --page name-of-page --name name-of-pipe --pipe
 ```
 
-#### Generate shared service for page
+#### Generate service for page
 
 ```bash
 hygen generator page-shared --section name-of-section --page name-of-page --name name-of-service --service
@@ -63,10 +63,34 @@ hygen generator page-shared --section name-of-section --page name-of-page --name
 hygen generator child-page-module --section name-of-section --parentPage name-of-page --name name-of-child-page
 ```
 
-### Generate child component for child page
+#### Generate child component for child page
 
 ```bash
 hygen generator child-page-component --section name-of-section --parentPage name-of-parent-page --page name-of-child-page --name name-of-component
+```
+
+#### Generate component for child page
+
+```bash
+hygen generator child-page-shared --section name-of-section --page name-of-page --name name-of-component --component
+```
+
+#### Generate directive for child page
+
+```bash
+hygen generator child-page-shared --section name-of-section --page name-of-page --name name-of-directive --directive
+```
+
+#### Generate pipe for child page
+
+```bash
+hygen generator child-page-shared --section name-of-section --page name-of-page --name name-of-pipe --pipe
+```
+
+#### Generate service for child page
+
+```bash
+hygen generator child-page-shared --section name-of-section --page name-of-page --name name-of-service --service
 ```
 
 ### Generate shared module
